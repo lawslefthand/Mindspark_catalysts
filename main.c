@@ -278,6 +278,8 @@ int main(void) {
 		    special_turns();
 
 		    invert_check=0;
+			error=0;
+			correction=0;
 
 	}
 }
