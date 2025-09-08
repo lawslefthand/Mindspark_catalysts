@@ -97,6 +97,9 @@ void stop(void) {
 
 int error_calculation(void) {
 
+	//M is middle L is left LL is far left same for right sensors R for Right RR for far right, T for Top and B for bottom
+
+
 	int M = 0;
 	int L = 0;
 	int R = 0;
@@ -126,6 +129,7 @@ void set_motor_speed(int left_speed,int right_speed)
 
 void special_turns(void)
 {
+	//M is middle L is left LL is far left same for right sensors R for Right RR for far right, T for Top and B for bottom
 	int M = 0;
 	int L = 0;
 	int R = 0;
@@ -133,6 +137,7 @@ void special_turns(void)
 	int RR = 0;
 	int T = 0;
 	int B = 0;
+
 
 	M = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_6);
 	L = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_8);
@@ -167,6 +172,9 @@ void special_turns(void)
 
 int check_inverted(void)
 {
+	//M is middle L is left LL is far left same for right sensors R for Right RR for far right, T for Top and B for bottom
+
+
 	int T = 0;
     int B = 0;
     int M = 0;
