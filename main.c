@@ -151,6 +151,7 @@ void special_turns(void) {
 	} else if ((M == 1) && (L == 1) && (T == 1) && (B == 1) && (R == 1)) //+ sign junction
 			{
 		straight_ahead();
+		HAL_Delay(100);
 	} else if ((M == 1) && (L == 0) && (LL == 0) && (R == 0) && (RR == 1)) //obtuse angle turn Right
 			{
 		turn_right_sensor();
@@ -460,3 +461,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
